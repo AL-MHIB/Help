@@ -1,13 +1,13 @@
-FROM telethonAr/telethonArab:alpine
+FROM AL-MHIB/ALMHIB:alpine
 
 #clonning repo 
-RUN git clone https://github.com/weall2022/Wael-Telethon.git /root/userbot
+RUN git clone https://github.com/AL-MHIB/ALMHIB.git /root/Arab
 #working directory 
-WORKDIR /root/userbot
+WORKDIR /root/Arab
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt
 
-ENV PATH="/home/userbot/bin:$PATH"
+ENV PATH="/home/Arab/bin:$PATH"
 
-CMD ["python3","-m","userbot"]
+CMD ["python3","-m","Arab"]
